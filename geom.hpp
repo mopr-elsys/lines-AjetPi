@@ -53,7 +53,7 @@ struct Line {
     }
 
     Line perpendicular(const Point& p) {
-        return Line(-B, A, -(-B * p.x + A * p.y));
+        return Line(-B, A, B * p.x - A * p.y));
     }
 
     void print(ostream& out) const {
